@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Shadow Labels Plugin Example</title>
+    
+    <!-- Just a bit of css to make the page look nice -->
+    <style type="text/css" media="screen">
+        body                { width: 630px; margin: 0 auto; font-family: Palatino,Georgia,"Times New Roman",Times,serif; font-size: 18px; }
+        h1                  { text-transform: uppercase; font-size: 1.7em; }
+        h1 span             { color: rgb(255,70,70); }
+        
+        input[type="text"]  { width: 250px; padding: 2px 3px; }
+        textarea            { width: 320px; max-width: 320px; padding: 2px 3px; }
+        
+        .default            { color: #aaa; }
+    </style>
+    
+    <!-- The following head elements are what you will need to make the plugin work -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.shadowlabels.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('form').shadowLabels(); 
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery <span>Shadow Labels</span> Plugin</h1>
+    
+    <p>
+        Go on. Give it a try. When you place your mouse inside of an input field or the textarea, the label magically disappears. If you then type in your information and click elsewhere, just as you would expect your inputted value remains in the input field. However if a field loses focus and you have not typed anything the label reappears.
+    </p>
+    
+    <form action="" method="post" accept-charset="utf-8">
+        <p>
+            <label for="name_id">Name:</label>
+            <br>
+            <input type="text" name="name" id="name_id">
+        </p>
+
+        <p>
+            <label for="email_id">Email:</label>
+            <br>
+            <input type="text" name="email" id="email_id">
+        </p>
+
+        <p>
+            <label for="message_id">Message:</label>
+            <br>
+            <textarea id="message_id" name="message" rows="8" cols="40">This is some default text</textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Continue &rarr;">
+        </p>
+    </form>
+</body>
+</html>
