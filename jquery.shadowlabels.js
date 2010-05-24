@@ -1,5 +1,5 @@
 /* 
-* Shadow Labels (0.1)
+* Shadow Labels (1.0)
 * by Marcus Whybrow (marcuswhybrow.net)
 * marcus@marcuswhybrow.net
 *
