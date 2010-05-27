@@ -42,15 +42,15 @@ The plugin accepts the following options:
         showValues: false,
     });
 
-=== text ===
+### text
 
 Apply the plugin to input elements where type="text" within the matched form elements (true by default).
 
-=== textarea ===
+### textarea
 
 Apply the plugin to textarea elements within the matched form elements (true by default).
 
-=== showValues ===
+### showValues
 
 If a field has a value (i.e. the default value displayed) it can be shown in brackets after the label by settings showValues to true.
 
